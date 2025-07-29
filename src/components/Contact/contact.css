@@ -116,7 +116,6 @@
     transition: all 0.3s 0s ease-out;
     outline: none;
     height: auto;
-    -webkit-appearance: none;
 }
 .contact__form form select::after
 {
