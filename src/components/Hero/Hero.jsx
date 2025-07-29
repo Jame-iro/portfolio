@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./hero.css";
 import { BsDownload } from "react-icons/bs";
-import avatar from "../../assets/avatar.jpg";
+import avatar from "/src/assets/avatar.jpg";
 import {
   FaFacebookF,
   FaLinkedinIn,
