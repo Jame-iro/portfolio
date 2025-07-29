@@ -1,0 +1,206 @@
+header
+{
+    position: static;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.4s;
+    padding-right: 2.8%;
+    padding-left: 2.8%;
+    z-index: 1000;
+    background-color: transparent;
+    flex: 0 0 auto;
+    max-width: 100%;
+}
+header .logo
+{
+    cursor: pointer;
+}
+header .logo img
+{
+    max-width: 60px;
+    height: auto;
+}
+.header-info
+{
+    display: none;
+
+}
+.header-info span
+{
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+}
+.header-info span:hover
+{
+    color:#8750f7
+}
+header > ul
+{
+    display: none;
+    align-items: center;
+    margin-left: auto;
+}
+header > ul li a
+{
+    display: flex;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    padding: 17px 0;
+    transition: 0.4s;
+}
+header > ul li a::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background: linear-gradient(260deg, #2a1454 0%, #8750f7 100%);
+    bottom: 9px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+header > ul li a:hover::before
+{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+header button
+{
+    border: none;
+    border-radius: 50px;
+    padding: 17px 35px;
+    background: linear-gradient(to right, #8750f7 0%, #2a1454 51%, #8750f7 100%);
+    background-size: 200%;
+    font-weight: 700;
+    line-height: 1;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-left: auto;
+}
+header button:hover
+{
+    background-position: right;
+    transition: 0.4s;
+}
+header .icon
+{
+    font-size: 40px;
+    transition: .4s;
+    margin-left: 25px;
+}
+.menu
+{
+    transform: scaleY(0);
+    overflow: hidden;
+    overflow-y: hidden;
+    position: fixed;
+    left: 0;
+    top: 95px;
+    width: 100%;
+    min-height: 90vh;
+    height: 90%;
+    overflow-y: auto;
+    background-color: #2a1454;
+    transition: all 0.4s ease-in-out 0s;
+    padding-bottom: 50px;
+    z-index: 999;
+}
+.menu ul
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 25px;
+}
+.menu ul li
+{
+    letter-spacing: 0;
+    font-size: 22px;
+}
+.menu.menu-active 
+{
+    transform: scaleY(1);
+}
+
+@media (min-width: 1400px) {
+    header
+    {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    header > ul
+    {
+        gap: 35px;
+    }
+}
+@media (min-width: 1500px) {
+    header
+    {
+        padding-right: 16%;
+        padding-left: 16%;
+    }    
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+    header > ul
+    {
+        gap: 30px;
+    }    
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    header > ul
+    {
+        gap: 20px;
+    }
+}
+@media (min-width: 992px) {
+    .header-info
+    {
+        margin-left: 15px;
+    }    
+    header > ul
+    {
+        display: flex;
+    }
+    header .icon
+    {
+        display: none;
+    }
+    header button
+    {
+        margin-left: 5%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-info
+    {
+        margin-left: 15px;
+    }
+}
+@media (min-width: 767px) {
+    header
+    {
+        padding: 40px unset 20px;
+        background-color: transparent;
+    }
+    .header-info
+    {
+        display: inline-block;
+        margin-right: auto;
+    }
+
+}

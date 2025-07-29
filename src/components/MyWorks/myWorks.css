@@ -1,0 +1,204 @@
+.my-works
+{
+    background-color: #0F0715;
+    padding: 70px 15px 80px;
+}
+.my-works__title
+{
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 30px;
+    visibility: visible;
+    transition: 0.3s;
+    animation-name: fadeInUp;
+    transform: translateY(40px);
+    background-image: linear-gradient(to right, #8750f7 0%, #fff 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.my-works-main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.my-works__filter
+{
+    transition-delay: 0.4s;
+    transform: translateY(40px);  
+    animation-name: fadeInUp;
+    padding: 0 8px;
+    position: relative;
+    background-color: #050709;
+    border-radius: 60px;
+    display: inline-block;
+    margin: 0 auto;    
+    margin-bottom: 40px;
+}
+.my-works__filter button
+{
+    font-size: 14px;
+    padding: 10px 6px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 1;
+    border-radius: 50px;
+    z-index: 10;
+    position: relative;
+}
+.my-works__filter button:nth-child(1)
+{
+    background: linear-gradient(to right, #8750f7 0%, #2a1454 100%);
+}
+
+.my-works__items
+{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    gap: 20px;
+    transition-delay: 0.3s;
+    animation-name: fadeInUp;
+    background-color: #0F0715;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    transform: translateY(40px);
+}
+.my-works__items::before
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35%;
+    height: 35%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: linear-gradient(260deg, #8750f7 0%, rgba(115, 67, 210, 0) 100%);
+    filter: blur(150px);
+    z-index: -1;
+}
+.my-works__item
+{
+    padding: 25px 15px 0 15px;
+    background-color: #140c1c;
+    margin-bottom: 4%;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.my-works__item .text-content
+{
+    width: calc(100% - 30px);
+    padding: 15px 30px 15px 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    border-radius: 15px;
+    margin: 0 auto;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    transform: translateY(15px);
+    background: linear-gradient(260deg, #2a1454 0%, #8750f7 100%);
+    cursor: pointer;
+}
+.my-works__item:hover .text-content
+{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+.my-works__item .text-content h3
+{
+    font-size: 25px;
+}
+.my-works__item .text-content .icon
+{
+    font-size: 31px;
+    right: 15px;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    transition: 0.5s;
+    transform-origin: center;
+}
+.my-works__item:hover .text-content .icon
+{
+    transform: translateY(-50%) rotate(360deg);
+}
+@media (min-width: 768px) {
+    .my-works__title
+    {
+        margin-bottom: 90px;
+        font-size: 35px;
+    }
+    .my-works__filter
+    {
+        padding: 6px 8px;
+    }
+    .my-works__filter button
+    {
+        padding: 12px 25px;
+        font-size: 15px;
+    }
+    .my-works__items
+    {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+
+}
+@media (min-width: 992px) {
+    .my-works
+    {
+        padding-right: 13%;
+        padding-left: 13%;
+    }
+    .my-works__title
+    {
+        margin-bottom: 50px;
+        font-size: 40px;
+    }
+    .my-works__items
+    {
+        column-gap: 50px;
+    }
+    .my-works__item
+    {
+        padding: 36px 36px 0 36px;
+    }
+    .my-works__item .text-content
+    {
+        width: calc(100% - 40px);
+        padding: 20px;
+        padding-right: 50px;
+    }
+    .my-works__item .text-content h3
+    {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .my-works__item .text-content .icon
+    {
+        font-size: 40px;
+        right: 25px;
+    }
+}
+@media (min-width: 1200px) {
+    .my-works__title
+    {
+        font-size: 45px;
+    }
+}
