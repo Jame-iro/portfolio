@@ -3,6 +3,7 @@
     padding: 45px 0 330px;
     padding-right: 2.8%;
     padding-left: 2.8%;
+    position: relative;
 }
 .hero::before
 {
@@ -275,7 +276,6 @@
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    /* width: 100px; */
 }
 .hero-facts__item h4
 {

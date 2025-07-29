@@ -107,7 +107,7 @@ header .icon
     transform: scaleY(0);
     overflow: hidden;
     overflow-y: hidden;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 95px;
     width: 100%;
