@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./header.css";
 import { NavHashLink, HashLink } from 'react-router-hash-link';
 import { CgMenuRight, CgClose } from "react-icons/cg";
-
+import lg from "../../assets/lg-j.png";
 const Header = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
 
@@ -15,7 +15,7 @@ const Header = () => {
       {/* header */}
       <header>
         <HashLink smooth to='#' className="logo">
-          <img src="/src/assets/lg-j.png" alt="logo" />
+          <img src={lg} alt="logo" />
         </HashLink>
         <div className="header-info">
           <span>jaja0890@gmail.com</span>

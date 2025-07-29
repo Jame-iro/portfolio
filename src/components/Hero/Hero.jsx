@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./hero.css";
 import { BsDownload } from "react-icons/bs";
+import avatar from "../../assets/avatar.jpg";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -59,7 +60,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="img-blog">
-            <img src="/src/assets/avatar.jpg" alt="avatar" />
+            <img src={avatar} alt="avatar" />
           </div>
           <div className="container d-none">
             <p>

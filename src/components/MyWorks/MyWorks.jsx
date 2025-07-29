@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "./myWorks.css";
 import { GoArrowUpRight } from "react-icons/go";
+import deloitte from "../../assets/deloitte.jpg";
+import createX from "../../assets/createX.png";
+import cosmodrom from "../../assets/cosmodrom.png";
+import mochnix from "../../assets/mochnix.jpg";
 const MyWorks = () => {
 
   return (
@@ -19,7 +23,7 @@ const MyWorks = () => {
           <div className="my-works__items fade-in-section">
             <div className="my-works__item branding">
               <div className="img-blog">
-                <img src="/src/assets/deloitte.jpg" alt="deloitte" />
+                <img src={deloitte} alt="deloitte" />
               </div>
               <div className="text-content">
                 <h3>Deloitte</h3>
@@ -29,7 +33,7 @@ const MyWorks = () => {
             </div>
             <div className="my-works__item ux-ui">
               <div className="img-blog">
-                <img src="/src/assets/createX.png" alt="createX" />
+                <img src={createX} alt="createX" />
               </div>
               <div className="text-content">
                 <h3>CreateX</h3>
@@ -39,7 +43,7 @@ const MyWorks = () => {
             </div>
             <div className="my-works__item apps">
               <div className="img-blog">
-                <img src="/src/assets/cosmodrom.png" alt="cosmodrom" />
+                <img src={cosmodrom} alt="cosmodrom" />
               </div>
               <div className="text-content">
                 <h3>Cosmodrom</h3>
@@ -49,7 +53,7 @@ const MyWorks = () => {
             </div>
             <div className="my-works__item branding">
               <div className="img-blog">
-                <img src="/src/assets/mochnix.jpg" alt="mochnix" />
+                <img src={mochnix} alt="mochnix" />
               </div>
               <div className="text-content">
                 <h3>Mochnix</h3>

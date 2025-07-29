@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HashLink } from 'react-router-hash-link';
 import "./footer.css";
+import lg from "../../assets/lg-j.png";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <footer>
         <div className="logo">
         <HashLink smooth to="#top">
-          <img src="/src/assets/lg-j.png" alt="avatar" />
+          <img src={lg} alt="log" />
         </HashLink>
         </div>
         <ul>

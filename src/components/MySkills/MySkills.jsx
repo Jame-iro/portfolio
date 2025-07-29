@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 import "./mySkills.css";
+import lgFigma from "../../assets/lg-figma.png";
+import lgSketch from "../../assets/lg-sketch.png";
+import lgXd from "../../assets/lg-xd.png";
+import lgWp from "../../assets/lg-wp.png";
+import lgReact from "../../assets/lg-react.png";
+import lgJs from "../../assets/lg-js.png";
+
 const MySkills = () => {
   return (
     <div>
@@ -15,7 +22,7 @@ const MySkills = () => {
           <div className="my-skills__item fade-in-section two">
             <div className="my-skills__item__inner">
               <div className="img-blog">
-                <img src="/src/assets/lg-figma.png" alt="figma-logo" />
+                <img src={lgFigma} alt="figma-logo" />
               </div>
               <span className="number">0%</span>
             </div>
@@ -24,7 +31,7 @@ const MySkills = () => {
           <div className="my-skills__item fade-in-section three">
             <div className="my-skills__item__inner">
               <div className="img-blog">
-                <img src="/src/assets/lg-sketch.png" alt="sketch-logo" />
+                <img src={lgSketch}alt="sketch-logo" />
               </div>
               <span className="number">1%</span>
             </div>
@@ -33,7 +40,7 @@ const MySkills = () => {
           <div className="my-skills__item fade-in-section four">
             <div className="my-skills__item__inner">
               <div className="img-blog">
-                <img src="/src/assets/lg-xd.png" alt="xd-logo" />
+                <img src={lgXd} alt="xd-logo" />
               </div>
               <span className="number">wtf?</span>
             </div>
@@ -42,7 +49,7 @@ const MySkills = () => {
           <div className="my-skills__item fade-in-section five">
             <div className="my-skills__item__inner">
               <div className="img-blog">
-                <img src="/src/assets/lg-wp.png" alt="wp-logo" />
+                <img src={lgWp} alt="wp-logo" />
               </div>
               <span className="number">102%</span>
             </div>
@@ -51,7 +58,7 @@ const MySkills = () => {
           <div className="my-skills__item fade-in-section six">
             <div className="my-skills__item__inner">
               <div className="img-blog">
-                <img src="/src/assets/lg-react.png" alt="react-logo" />
+                <img src={lgReact} alt="react-logo" />
               </div>
               <span className="number">-10%</span>
             </div>
@@ -60,7 +67,7 @@ const MySkills = () => {
           <div className="my-skills__item fade-in-section seven">
             <div className="my-skills__item__inner">
               <div className="img-blog">
-                <img src="/src/assets/lg-js.png" alt="js-logo" />
+                <img src={lgJs} alt="js-logo" />
               </div>
               <span className="number">69%</span>
             </div>

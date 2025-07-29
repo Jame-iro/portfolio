@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "./recentBlogs.css";
 import { FaRegCalendarDays, FaRegComments } from "react-icons/fa6";
+import blogImg1 from "../../assets/blog-img1.jpg";
+import blogImg2 from "../../assets/blog-img2.jpg";
+import blogImg3 from "../../assets/blog-img3.jpg";
+
 const RecentBlogs = () => {
   return (
     <div>
@@ -16,7 +20,7 @@ const RecentBlogs = () => {
           <div className="recent-blogs__item fade-in-section two">
             <div className="blog-thumb">
               <div className="img-blog">
-                <img src="/src/assets/blog-img1.jpg" alt="blog-img" />
+                <img src={blogImg1} alt="blog-img" />
               </div>
               <span>SAAS</span>
             </div>
@@ -41,7 +45,7 @@ const RecentBlogs = () => {
           <div className="recent-blogs__item fade-in-section three">
             <div className="blog-thumb">
               <div className="img-blog">
-                <img src="/src/assets/blog-img2.jpg" alt="blog-img" />
+                <img src={blogImg2} alt="blog-img" />
               </div>
               <span>DESIGN</span>
             </div>
@@ -64,7 +68,7 @@ const RecentBlogs = () => {
           <div className="recent-blogs__item fade-in-section four">
             <div className="blog-thumb">
               <div className="img-blog">
-                <img src="/src/assets/blog-img3.jpg" alt="blog-img" />
+                <img src={blogImg3} alt="blog-img" />
               </div>
               <span>Technology</span>
             </div>
