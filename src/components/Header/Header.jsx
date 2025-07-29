@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./header.css";
 import { NavHashLink, HashLink } from 'react-router-hash-link';
 import { CgMenuRight, CgClose } from "react-icons/cg";
-import lg from "../../assets/lg-j.png";
+import lg from "/public/images/lg-j.png";
 const Header = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
 

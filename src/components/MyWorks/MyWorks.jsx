@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./myWorks.css";
 import { GoArrowUpRight } from "react-icons/go";
-import deloitte from "../../assets/deloitte.jpg";
-import createX from "../../assets/createX.png";
-import cosmodrom from "../../assets/cosmodrom.png";
-import mochnix from "../../assets/mochnix.jpg";
+import deloitte from "/public/images/deloitte.jpg";
+import createX from "/public/images/createX.png";
+import cosmodrom from "/public/images/cosmodrom.png";
+import mochnix from "/public/images/mochnix.jpg";
 const MyWorks = () => {
 
   return (
