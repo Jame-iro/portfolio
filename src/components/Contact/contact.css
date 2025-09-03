@@ -21,10 +21,6 @@
 }
 .contact__info li
 {
-    visibility: visible;
-    transition-delay: 0.2s;
-    animation-name: fadeInRight;
-    transform: translateX(40px);
     padding-left: 65px;
     position: relative;
 }
@@ -69,10 +65,6 @@
 }
 .contact__form__title h2
 {
-    visibility: visible;
-    transition-delay: 0.3s;
-    animation-name: fadeInUp;
-    transform: translateY(40px);
     font-size: 30px;
     background-image: linear-gradient(to right, #8750f7 0%, #fff 100%);
     background-clip: text;
@@ -81,9 +73,6 @@
 }
 .contact__form__title p
 {
-    visibility: visible;
-    transition-delay: 0.4s;
-    animation-name: fadeInUp;
     transform: translateY(40px);
     margin-top: 15px;
 }
@@ -92,11 +81,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform .4s;
-    visibility: visible;
-    transition-delay: 0.5s;
-    animation-name: fadeInUp;
-    transform: translateY(40px);
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
     padding: 0 1rem;
 }
 .contact__form form input,

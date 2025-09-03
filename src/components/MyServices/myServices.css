@@ -20,23 +20,16 @@
 }
 .my-services__title h2
 {
-    transition-delay: 0.3s;
-    animation-name: fadeInUp;
     font-size: 30px;
     background-image: linear-gradient(to right, #8750f7 0%, #fff 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transform: translateY(40px);
     display: inline-flex;
 }
 .my-services__title p
 {
     margin-top: 15px;
-    visibility: visible;
-    transition-delay: 0.4s;
-    animation-name: fadeInUp;
     display: block;
-    transform: translateY(40px);
     opacity: 0;
 }
 .my-services__items
@@ -50,15 +43,11 @@
 .my-services__item
 {
     position: relative;
-    visibility: visible;
-    transition-delay: 0.3s;
-    animation-name: fadeInUp;
     padding: 20px 15px;
     gap: 15px;
     transition: all 0.5s ease;
     border-bottom: 1px solid #2a1454;
     display: flex;
-    transform: translateY(40px);
     flex-direction: column;
 }
 .my-services__item:hover

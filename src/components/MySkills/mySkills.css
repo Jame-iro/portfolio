@@ -26,18 +26,12 @@
     background-image: linear-gradient(to right, #8750f7 0%, #fff 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition-delay: 0.3s;
-    visibility: visible;
-    transform: translateY(40px);
     display: inline-flex;
     gap: 15px;
 }
 .my-skills__title p
 {
     margin-top: 15px;
-    transition-delay: 0.4s;
-    visibility: visible;
-    transform: translateY(40px);
 }
 .my-skills_items
 {
@@ -54,35 +48,8 @@
 {
     max-width: 165px;
     width: 165px;
-    visibility: visible;
-    transform: translateY(40px);
     text-align: center;
 }
-.my-skills_items .two
-{
-    transition-delay: 0.2s;
-}
-.my-skills_items .three
-{
-    transition-delay: 0.3s;
-}
-.my-skills_items .four
-{
-    transition-delay: 0.4s;
-}
-.my-skills_items .five
-{
-    transition-delay: 0.5s;
-}
-.my-skills_items .six
-{
-    transition-delay: 0.6s;
-}
-.my-skills_items .seven
-{
-    transition-delay: 0.7s;
-}
-
 .my-skills__item__inner
 {
     border-radius: 25px;

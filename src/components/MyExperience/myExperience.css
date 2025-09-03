@@ -16,10 +16,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 0px 0px 40px 0px;    transition-delay: 0.3s;
-    visibility: visible;
-    transform: translateY(40px);
-    transition-delay: 0.4s;
+    margin: 0px 0px 40px 0px;
 }
 .my-experience-item__title .icon
 {
@@ -63,14 +60,6 @@
     border-radius: 20px;
     background: #140c1c;
     z-index: 10;
-    visibility: visible;
-    transition-delay: 0.3s;
-    animation-name: fadeInLeft;
-    transform: translateX(-30px);
-}
-.my-experience__box-right
-{
-    transform: translateX(30px);
 }
 .my-experience__box::before,
 .my-experience__box-right::before

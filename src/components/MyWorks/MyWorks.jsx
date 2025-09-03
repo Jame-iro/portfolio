@@ -5,22 +5,74 @@ import deloitte from "/public/images/deloitte.jpg";
 import createX from "/public/images/createX.png";
 import cosmodrom from "/public/images/cosmodrom.png";
 import mochnix from "/public/images/mochnix.jpg";
+import { motion } from "framer-motion";
 const MyWorks = () => {
-
   return (
-    <div>
-      {/* myWorks */}
+    <>
       <section className="my-works" id="works">
-        <h2 className="my-works__title fade-in-section">My Recent Works</h2>
+        <motion.h2
+          className="my-works__title fade-in"
+          initial={{
+            opacity: 0,
+            transform: "translateY(40px)",
+            scaleY: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+            transform: "translateY(0)",
+            scaleY: 1,
+          }}
+          transition={{
+            duration: 1,
+            delay: 0.3,
+            ease: "easeOut",
+          }}
+        >
+          My Recent Works
+        </motion.h2>
         <div className="my-works-main">
-          <div className="my-works__filter fade-in-section">
+          <motion.div
+            className="my-works__filter fade-in"
+            initial={{
+              opacity: 0,
+              transform: "translateY(40px)",
+              scaleY: 0,
+            }}
+            whileInView={{
+              opacity: 1,
+              transform: "translateY(0)",
+              scaleY: 1,
+            }}
+            transition={{
+              duration: 1,
+              delay: 0.3,
+              ease: "easeOut",
+            }}
+          >
             <button>All</button>
             <button>Apps</button>
             <button>Branding</button>
             <button>Content</button>
             <button>UX/UI</button>
-          </div>
-          <div className="my-works__items fade-in-section">
+          </motion.div>
+          <motion.div
+            className="my-works__items fade-in"
+            initial={{
+              opacity: 0,
+              transform: "translateY(40px)",
+              scaleY: 0,
+            }}
+            whileInView={{
+              opacity: 1,
+              transform: "translateY(0)",
+              scaleY: 1,
+            }}
+            transition={{
+              duration: 1,
+              delay: 0.4,
+              ease: "easeOut",
+            }}
+          >
             <div className="my-works__item branding">
               <div className="img-blog">
                 <img src={deloitte} alt="deloitte" />
@@ -61,11 +113,10 @@ const MyWorks = () => {
                 <GoArrowUpRight className="icon arrow-up-right" />
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
-      {/* /myWorks */}
-    </div>
+    </>
   );
 };
 

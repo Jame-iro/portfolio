@@ -24,18 +24,12 @@
     background-image: linear-gradient(to right, #8750f7 0%, #fff 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition-delay: 0.3s;
-    visibility: visible;
-    transform: translateY(40px);
     display: inline-flex;
     gap: 15px;
 }
 .recent-blogs__title p
 {
     margin-top: 15px;
-    transition-delay: 0.4s;
-    visibility: visible;
-    transform: translateY(40px);
 }
 .recent-blogs__items
 {
@@ -49,23 +43,8 @@
     gap: 20px;
     transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform .4s;
 }
-.recent-blogs__items .two
-{
-    transition-delay: .2s;
-}
-.recent-blogs__items .three
-{
-    transition-delay: .3s;
-}
-.recent-blogs__items .four
-{
-    transition-delay: .4s;
-}
 .recent-blogs__item
 {
-    visibility: visible;
-    animation-name: fadeInUp;
-    transform: translateY(40px);
     background: #140c1c;
     border-radius: 15px;
     max-width: 400px;

@@ -8,10 +8,6 @@
     margin: 0 auto;
     margin-bottom: 40px;
     font-size: 30px;
-    visibility: visible;
-    transition: 0.3s;
-    animation-name: fadeInUp;
-    transform: translateY(40px);
     background-image: linear-gradient(to right, #8750f7 0%, #fff 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -29,9 +25,6 @@
 }
 .my-works__filter
 {
-    transition-delay: 0.4s;
-    transform: translateY(40px);  
-    animation-name: fadeInUp;
     padding: 0 8px;
     position: relative;
     background-color: #050709;
@@ -63,14 +56,11 @@
     display: grid;
     grid-template-columns: repeat(1, minmax(300px, 1fr));
     gap: 20px;
-    transition-delay: 0.3s;
-    animation-name: fadeInUp;
     background-color: #0F0715;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    transform: translateY(40px);
 }
 .my-works__items::before
 {
