@@ -17,7 +17,7 @@ const App = () => {
   });
 
   return (
-    <div>
+    <>
       <Header />
       <Hero />
       <MyServices />
@@ -27,7 +27,7 @@ const App = () => {
       <RecentBlogs />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 };
 

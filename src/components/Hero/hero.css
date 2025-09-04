@@ -16,8 +16,6 @@
     border-radius: 50%;
     background: linear-gradient(260deg, #8750f7 0%, rgba(115, 67, 210, 0) 100%);
     filter: blur(150px);
-    margin-right: -5%;
-    margin-top: -5%;
     z-index: -1;
 }
 .hero-text svg
@@ -33,6 +31,7 @@
     justify-content: center;
     z-index: -1;
     animation: 3s pulsate infinite alternate ease-in-out;
+    display: none;
 }
 .hero-text svg text
 {
@@ -291,10 +290,15 @@
     {
         padding: 85px 10% 230px;
     }
+    .hero::before{
+        margin-right: -5%;
+        margin-top: -5%;
+    }
     .hero-text svg
     {
         left: 46%;
         top: 50%;
+        display: block;
     }
     .hero-text svg text
     {

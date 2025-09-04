@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./header.css";
 import { NavHashLink, HashLink } from 'react-router-hash-link';
 import { CgMenuRight, CgClose } from "react-icons/cg";
-import lg from "/public/images/lg-j.png";
+import lg from "../../assets/lg-j.png";
 const Header = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
 
@@ -12,7 +12,6 @@ const Header = () => {
 
   return (
     <>
-      {/* header */}
       <header>
         <HashLink smooth to='#' className="logo">
           <img src={lg} alt="logo" />
@@ -81,7 +80,6 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      {/* /header */}
     </>
   );
 };

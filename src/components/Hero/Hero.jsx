@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./hero.css";
 import { BsDownload } from "react-icons/bs";
-import avatar from "/public/images/avatar.jpg";
+import avatar from "../../assets/avatar.jpg";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -11,7 +11,6 @@ import {
 const Hero = () => {
   return (
     <div>
-      {/* hero */}
       <section className="hero">
         <div className="hero-text">
           <svg viewBox="0 0 1320 300">
@@ -146,7 +145,6 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      {/* /hero */}
     </div>
   );
 };
